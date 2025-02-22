@@ -1,0 +1,22 @@
+{
+  "Id": "9c17afe3-dd26-4cfc-9c03-84b89452c94e",
+  "LastUpdated": "2025-02-22T00:51:23.8535866Z",
+  "Name": "Trivial.Scaf.Templates",
+  "Url": "https://github.com/Joxno/Trivial.Scaf.Templates",
+  "Templates": [
+    {
+      "RepoId": "9c17afe3-dd26-4cfc-9c03-84b89452c94e",
+      "Id": "c800265a-6165-4303-8b6c-2b2cdb38811a",
+      "Name": "csharp",
+      "Key": "csharp",
+      "Path": "csharp"
+    },
+    {
+      "RepoId": "9c17afe3-dd26-4cfc-9c03-84b89452c94e",
+      "Id": "62fdfd93-6d8b-4175-9e07-0d969f8690d9",
+      "Name": "test",
+      "Key": "test",
+      "Path": "test"
+    }
+  ]
+}

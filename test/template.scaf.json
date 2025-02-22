@@ -1,0 +1,30 @@
+{
+  "Id": "62fdfd93-6d8b-4175-9e07-0d969f8690d9",
+  "Name": "test",
+  "Key": "test",
+  "Description": "",
+  "Global": {
+    "Includes": [],
+    "Configs": []
+  },
+  "Triggers": [
+    {
+      "Keyword": "",
+      "Description": "",
+      "Parameters": [],
+      "Options": [],
+      "Action": {
+        "Executable": "Run-Default.ps1",
+        "Includes": [
+          "Includes.ps1"
+        ],
+        "Configs": [
+          {
+            "Name": "ScafCfg",
+            "File": "template.scaf.json"
+          }
+        ]
+      }
+    }
+  ]
+}

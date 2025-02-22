@@ -1,0 +1,104 @@
+{
+  "Id": "c800265a-6165-4303-8b6c-2b2cdb38811a",
+  "Name": "csharp",
+  "Key": "csharp",
+  "Description": "Scaffolds for csharp",
+  "Global": {
+    "Includes": [
+      "Includes.ps1"
+    ],
+    "Configs": [
+      {
+        "Name": "ScafCfg",
+        "File": "template.scaf.json"
+      }
+    ]
+  },
+  "Triggers": [
+    {
+      "Keyword": "dir-struct",
+      "Description": "",
+      "Parameters": [
+        {
+          "Name": "Output",
+          "Description": "Output Path"
+        }
+      ],
+      "Options": [],
+      "Action": {
+        "Executable": "./scripts/New-FolderStructure.ps1",
+        "Includes": [],
+        "Configs": []
+      }
+    },
+    {
+      "Keyword": "lib",
+      "Description": "",
+      "Parameters": [
+        {
+          "Name": "Name",
+          "Description": "Name of project"
+        }
+      ],
+      "Options": [
+        {
+          "Names": ["--output"],
+          "Description": "Output Path",
+          "MapToName": "Output",
+          "DefaultValue": "./"
+        }
+      ],
+      "Action": {
+        "Executable": "./scripts/New-ClassLib.ps1",
+        "Includes": [],
+        "Configs": []
+      }
+    },
+    {
+      "Keyword": "lib-web",
+      "Description": "",
+      "Parameters": [
+        {
+          "Name": "Name",
+          "Description": "Name of project"
+        }
+      ],
+      "Options": [
+        {
+          "Names": ["--output"],
+          "Description": "Output Path",
+          "MapToName": "Output",
+          "DefaultValue": "./"
+        }
+      ],
+      "Action": {
+        "Executable": "./scripts/New-RazorLib.ps1",
+        "Includes": [],
+        "Configs": []
+      }
+    },
+    {
+      "Keyword": "lib-test",
+      "Description": "",
+      "Parameters": [
+        {
+          "Name": "Name",
+          "Description": "Name of project"
+        }
+      ],
+      "Options": [
+        {
+          "Names": ["--output"],
+          "Description": "Output Path",
+          "MapToName": "Output",
+          "DefaultValue": "./"
+        }
+      ],
+      "Action": {
+        "Executable": "./scripts/New-TestLib.ps1",
+        "Includes": [],
+        "Configs": []
+      }
+    }
+  ]
+}
