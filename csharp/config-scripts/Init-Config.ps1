@@ -1,6 +1,6 @@
 if($null -ne $ScafWorkspace)
 {
-    $DefaultConfig = Get-Content "$PSScriptRoot\default-config.json" -Raw;
+    $DefaultConfig = Get-Content "$PSScriptRoot\default.config.json" -Raw;
     scaf workspace configure data add "csharp" $DefaultConfig;
     Write-Host "Configured workspace with default settings";
 }
