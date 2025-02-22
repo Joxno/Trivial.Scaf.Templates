@@ -2,10 +2,10 @@ param($Namespace)
 
 if($null -ne $ScafWorkspace)
 {
-    if($null -ne $ScafWorkspace.csharp)
+    if($null -ne $ScafWorkspace.data.csharp)
     {
-        $ScafWorkspace.csharp.RootNamespace = $Namespace;
-        scaf workspace configure data add "csharp" ($ScafWorkspace.csharp | ConvertTo-Json);
+        $ScafWorkspace.data.csharp.RootNamespace = $Namespace;
+        scaf workspace configure data add "csharp" ($ScafWorkspace.data.csharp | ConvertTo-Json);
         Write-Host "Configured csharp settings with root namespace: $Namespace";
     }
     else
