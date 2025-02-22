@@ -16,6 +16,33 @@
   },
   "Triggers": [
     {
+      "Keyword": "setup-workspace",
+      "Description": "Setup workspace with default configuration",
+      "Parameters": [],
+      "Options": [],
+      "Action": {
+        "Executable": "./config-scripts/Init-Config.ps1",
+        "Includes": [],
+        "Configs": []
+      }
+    },
+    {
+      "Keyword": "set-namespace",
+      "Description": "Set root namespace for workspace",
+      "Parameters": [
+        {
+          "Name": "Namespace",
+          "Description": "Root Namespace"
+        }
+      ],
+      "Options": [],
+      "Action": {
+        "Executable": "./config-scripts/Set-RootNamespace.ps1",
+        "Includes": [],
+        "Configs": []
+      }
+    },
+    {
       "Keyword": "dir-struct",
       "Description": "",
       "Parameters": [
